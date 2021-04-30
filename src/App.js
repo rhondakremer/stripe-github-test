@@ -3,9 +3,12 @@ import './App.css';
 import StripeProviderHolder from './components/StripeProviderHolder';
 
 function App() {
-  
+
   return (
-    <StripeProviderHolder />
+    <div>
+      <p>is anything working?</p>
+      <StripeProviderHolder />
+    </div>
   );
 }
 
