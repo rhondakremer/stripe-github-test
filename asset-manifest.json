@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/stripe-github-react/static/css/main.9d5b29c0.chunk.css",
-    "main.js": "/stripe-github-react/static/js/main.ddcc7dac.chunk.js",
-    "main.js.map": "/stripe-github-react/static/js/main.ddcc7dac.chunk.js.map",
+    "main.js": "/stripe-github-react/static/js/main.2e14cf2e.chunk.js",
+    "main.js.map": "/stripe-github-react/static/js/main.2e14cf2e.chunk.js.map",
     "runtime-main.js": "/stripe-github-react/static/js/runtime-main.ba84a675.js",
     "runtime-main.js.map": "/stripe-github-react/static/js/runtime-main.ba84a675.js.map",
-    "static/js/2.72133077.chunk.js": "/stripe-github-react/static/js/2.72133077.chunk.js",
-    "static/js/2.72133077.chunk.js.map": "/stripe-github-react/static/js/2.72133077.chunk.js.map",
+    "static/js/2.39daae9f.chunk.js": "/stripe-github-react/static/js/2.39daae9f.chunk.js",
+    "static/js/2.39daae9f.chunk.js.map": "/stripe-github-react/static/js/2.39daae9f.chunk.js.map",
     "static/js/3.e60be02f.chunk.js": "/stripe-github-react/static/js/3.e60be02f.chunk.js",
     "static/js/3.e60be02f.chunk.js.map": "/stripe-github-react/static/js/3.e60be02f.chunk.js.map",
     "index.html": "/stripe-github-react/index.html",
     "static/css/main.9d5b29c0.chunk.css.map": "/stripe-github-react/static/css/main.9d5b29c0.chunk.css.map",
-    "static/js/2.72133077.chunk.js.LICENSE.txt": "/stripe-github-react/static/js/2.72133077.chunk.js.LICENSE.txt",
+    "static/js/2.39daae9f.chunk.js.LICENSE.txt": "/stripe-github-react/static/js/2.39daae9f.chunk.js.LICENSE.txt",
     "static/media/logo.6ce24c58.svg": "/stripe-github-react/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.ba84a675.js",
-    "static/js/2.72133077.chunk.js",
+    "static/js/2.39daae9f.chunk.js",
     "static/css/main.9d5b29c0.chunk.css",
-    "static/js/main.ddcc7dac.chunk.js"
+    "static/js/main.2e14cf2e.chunk.js"
   ]
 }
