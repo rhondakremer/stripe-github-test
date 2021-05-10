@@ -44,7 +44,7 @@ class PaymentRequestForm extends React.Component {
                         // https://stripe.com/docs/elements/payment-request-button#styling-the-element
                         paymentRequestButton: {
                             theme: 'dark',
-                            height: '64px',
+                            height: '40px',
                         },
                     }}
                 />
