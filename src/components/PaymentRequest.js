@@ -16,8 +16,15 @@ class PaymentRequestForm extends React.Component {
                 amount: 1,
             },
         });
+        handleComplete = (token) => {
+            console.log("hey hey we're the token", token)
+        }
 
-        paymentRequest.on('token', this.handleResponse);
+        paymentRequest.on('token', ({ complete, token, ...data }) => {
+            console.log('Received Stripe token: ', token);
+            console.log('Received customer information: ', data);
+            complete(this.handleComplete(token))
+        });
 
         paymentRequest.canMakePayment().then((result) => {
             this.setState({ canMakePayment: !!result });
@@ -27,11 +34,6 @@ class PaymentRequestForm extends React.Component {
             canMakePayment: false,
             paymentRequest,
         };
-    }
-
-    handleResponse = (event, token) => {
-        console.log("event", event)
-        console.log("token", token)
     }
 
     render() {
