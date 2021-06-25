@@ -13,7 +13,7 @@ class PaymentRequestForm extends React.Component {
             currency: 'usd',
             total: {
                 label: 'Demo total',
-                amount: 1,
+                amount: props.totalPrice,
             },
         });
 
