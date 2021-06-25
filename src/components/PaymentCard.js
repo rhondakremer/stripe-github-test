@@ -17,7 +17,7 @@ const PaymentCard = () => {
         <Elements>
           <PaymentRequest totalPrice={totalPrice}/>
         </Elements>
-        <button onClick={setTotalPrice(totalPrice++)}>Click me</button>
+        <button onClick={() => setTotalPrice(totalPrice++)}>Click me</button>
       </div>
     );
 
