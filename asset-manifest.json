@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/stripe-github-test/static/css/main.9d5b29c0.chunk.css",
-    "main.js": "/stripe-github-test/static/js/main.48c8eebc.chunk.js",
-    "main.js.map": "/stripe-github-test/static/js/main.48c8eebc.chunk.js.map",
+    "main.js": "/stripe-github-test/static/js/main.2ca44515.chunk.js",
+    "main.js.map": "/stripe-github-test/static/js/main.2ca44515.chunk.js.map",
     "runtime-main.js": "/stripe-github-test/static/js/runtime-main.d2aba959.js",
     "runtime-main.js.map": "/stripe-github-test/static/js/runtime-main.d2aba959.js.map",
-    "static/js/2.961a0758.chunk.js": "/stripe-github-test/static/js/2.961a0758.chunk.js",
-    "static/js/2.961a0758.chunk.js.map": "/stripe-github-test/static/js/2.961a0758.chunk.js.map",
+    "static/js/2.d660aec8.chunk.js": "/stripe-github-test/static/js/2.d660aec8.chunk.js",
+    "static/js/2.d660aec8.chunk.js.map": "/stripe-github-test/static/js/2.d660aec8.chunk.js.map",
     "static/js/3.e60be02f.chunk.js": "/stripe-github-test/static/js/3.e60be02f.chunk.js",
     "static/js/3.e60be02f.chunk.js.map": "/stripe-github-test/static/js/3.e60be02f.chunk.js.map",
     "index.html": "/stripe-github-test/index.html",
     "static/css/main.9d5b29c0.chunk.css.map": "/stripe-github-test/static/css/main.9d5b29c0.chunk.css.map",
-    "static/js/2.961a0758.chunk.js.LICENSE.txt": "/stripe-github-test/static/js/2.961a0758.chunk.js.LICENSE.txt",
+    "static/js/2.d660aec8.chunk.js.LICENSE.txt": "/stripe-github-test/static/js/2.d660aec8.chunk.js.LICENSE.txt",
     "static/media/logo.6ce24c58.svg": "/stripe-github-test/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.d2aba959.js",
-    "static/js/2.961a0758.chunk.js",
+    "static/js/2.d660aec8.chunk.js",
     "static/css/main.9d5b29c0.chunk.css",
-    "static/js/main.48c8eebc.chunk.js"
+    "static/js/main.2ca44515.chunk.js"
   ]
 }
