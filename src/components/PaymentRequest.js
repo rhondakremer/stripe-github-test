@@ -6,6 +6,13 @@ const PaymentRequestForm = ({ stripe, totalPrice }) => {
     const [canMakePayment, setCanMakePayment] = useState(false)
     const [paymentRequest, setPaymentRequest] = useState(null)
 
+    const isPriceValid = (price) => {
+        const priceArray = price.toString().split('.')
+        if (!priceArray[1]) return false
+        const centValidLength = priceArray[1].length < 3
+        return !(centValidLength && parseInt(priceArray[1]) <= 99)
+    }
+
     const formPaymentRequest = () => {
         const newPaymentRequest = stripe.paymentRequest({
             country: 'US',
@@ -14,7 +21,7 @@ const PaymentRequestForm = ({ stripe, totalPrice }) => {
             requestPayerName: true,
             total: {
                 label: 'hey test',
-                amount: totalPrice,
+                amount: Math.round(totalPrice*100),
             },
         })
         setPaymentRequest(newPaymentRequest)
@@ -29,7 +36,7 @@ const PaymentRequestForm = ({ stripe, totalPrice }) => {
             currency: 'usd',
             total: {
                 label: 'hey test',
-                amount: totalPrice,
+                amount: Math.round(totalPrice*100),
             },
         })
     }, [totalPrice, paymentRequest])
@@ -44,7 +51,11 @@ const PaymentRequestForm = ({ stripe, totalPrice }) => {
         console.log("hey hey we're the token", token)
     }
 
-    return canMakePayment ? (
+    if (!canMakePayment || !isPriceValid(totalPrice)) {
+        return null
+    }
+    else {
+        return canMakePayment ? (
         <div>
             <PaymentRequestButtonElement
                 paymentRequest={paymentRequest}
@@ -67,6 +78,7 @@ const PaymentRequestForm = ({ stripe, totalPrice }) => {
             Request Button, switch to one of <a href="https://stripe.com/docs/stripe-js/elements/payment-request-button#testing">the supported browsers</a>, and make sure you have a saved payment method.
         </p>
     );
+    }
 }
 
 export default injectStripe(PaymentRequestForm);
